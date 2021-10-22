@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>ENTER DATA BELOW</h1>
+        <form action="/predict" method="POST">
+            <label for="name">Name of Kickstarter:</label>
+            <input type="text" id="name" name="name">
+            </br>
+            <label for="date">Launch Date:</label>
+            <input type="date" id="date" name="date">
+            </br>
+            <label for="deadline">Deadline Date:</label>
+            <input type="date" id="deadline" name="deadline">
+            </br>
+            <label for="country">Country Code:</label>
+            <select id="country" name="country">
+                <option value="" disabled selected>Select Country</option>
+                <option value="1">Australia (AU)</option>
+                <option value="0" >Austria (AT)</option>
+                <option value="2">Belgium (BE)</option>
+                <option value="3">Canada (CA)</option>
+                <option value="6">Denmark (DK)</option>
+                <option value="8">France (FR)</option>
+                <option value="5">Germany (DE)</option>
+                <option value="10">Hong Kong (HK)</option>
+                <option value="11">Ireland (IE)</option>
+                <option value="12">Italy (IT)</option>
+                <option value="13">Japan (JP)</option>
+                <option value="14">Luxembourg (LU)</option>
+                <option value="16">Mali (ML)</option>
+                <option value="15">Mexico (MX)</option>
+                <option value="18">New Zealand (NZ)</option>
+                <option value="17">Norway (NO)</option>
+                <option value="20">Singapore (SG)</option>
+                <option value="7">Spain (ES)</option>
+                <option value="19">Sweden (SE)</option>
+                <option value="4">Switzerland (CH)</option>
+                <option value="9">United Kingdom (GB)</option>
+                <option value="21">United States (US)</option>
+                <option value="22">Other</option>
+            </select>
+            </br>
+            <label for="currency">Currency Code:</label>
+            <select id="currency" name="currency">
+                <option value="0">AUD (Australia Dollar)</option>
+                <option value="1">CAD (Canada Dollar)</option>
+                <option value="2">CHF (Switzerland Franc)</option>
+                <option value="3">DKK (Denmark Krone)</option>
+                <option value="4">EUR (Euro)</option>
+                <option value="5">GBP (Great Britain Pound)</option>
+                <option value="6">HKD (Hong Kong Dollar)</option>
+                <option value="7">JPY (Japan Yen)</option>
+                <option value="8">MXN (Mexico Peso)</option>
+                <option value="9">NOK (Norway Kroner)</option>
+                <option value="10">NZD (New Zealand Dollar)</option>
+                <option value="11">SEK (Sweden Krona)</option>
+                <option value="12">SGD (Singapore Dollar)</option>
+                <option value="13">USD (USA Dollar)</option>
+            </select>
+            </br>
+            <label for="goal">Goal Amount in Chosen Currency:</label>
+            <input type="number" id="goal" name="goal"></br>
+            </br>
+            <label for="category">Category:</label>
+            <select id="category" name="category">
+                <option value="0">Art</option>
+                <option value="1">Comics</option>
+                <option value="2">Crafts</option>
+                <option value="3">Dance</option>
+                <option value="4">Design</option>
+                <option value="5">Fashion</option>
+                <option value="6">Film and Video</option>
+                <option value="7">Food</option>
+                <option value="8">Games</option>
+                <option value="9">Journalism</option>
+                <option value="10">Music</option>
+                <option value="11">Photography</option>
+                <option value="12">Publishing</option>
+                <option value="13">Technology</option>
+                <option value="14">Theater</option>  
+            </select>
+            </br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
